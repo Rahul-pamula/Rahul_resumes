@@ -1,0 +1,139 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{left=0.5in, right=0.5in, top=0.2in, bottom=0.2in}
+\usepackage{lmodern}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\definecolor{primary}{RGB}{0, 73, 144}
+\definecolor{text}{RGB}{40, 40, 40}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=magenta,      
+    urlcolor=primary,
+    pdftitle={Pamula Rahul - Resume},
+    pdfpagemode=FullScreen,
+}
+
+% Custom section command optimized for balanced spacing
+\newcommand{\resumesection}[1]{%
+  \vspace{1pt}%
+  {\color{primary}\large\textbf{\MakeUppercase{#1}}}\par
+  \vspace{1pt}%
+  {\color{primary}\hrule height 1.2pt}
+  \vspace{2pt}%
+}
+
+\begin{document}
+\pagestyle{empty}
+\color{text}
+
+% Name and Contact Info
+{\centering
+    {\Huge \textbf{\color{primary} PAMULA RAHUL}}\par
+    \vspace{1pt}
+    {\small 
+    \faPhone \ +91 7330864041 \quad | \quad 
+    \faMapMarker \ Maripeda, Mahabubabad, Telangana, India \quad | \quad 
+    \faEnvelope \ \href{mailto:pamularahul123@gmail.com}{pamularahul123@gmail.com}}\par
+    \vspace{1pt}
+    {\small 
+    \faLinkedin \ \href{http://www.linkedin.com/in/rahul-pamula}{linkedin.com/in/rahul-pamula} \quad | \quad 
+    \faGithub \ \href{https://github.com/Rahul-pamula}{github.com/Rahul-pamula} \quad | \quad 
+    \faCode \ \href{https://leetcode.com/u/rahulpamula}{leetcode.com/u/rahulpamula} \quad | \quad 
+    \faLink \ \href{https://bytexl.app/pamularahul}{bytexl.app/pamularahul}}\par
+}
+
+\vspace{1pt}
+
+% Professional Summary
+\resumesection{PROFESSIONAL SUMMARY}
+\noindent AZ-900 certified Cloud \& DevOps Engineer focused on building highly scalable infrastructure, automated CI/CD pipelines, and reliable backend systems. Experienced in serverless architectures, containerization, and cloud deployments using AWS, Microsoft Azure, Docker, and Render. Proven track record of optimizing application performance, designing resilient distributed systems, and ensuring 99.9\% uptime across multi-tenant platforms.
+
+% Technical Skills
+\resumesection{TECHNICAL SKILLS}
+\noindent\textbf{Cloud \& DevOps:} AWS (EC2, S3, Lambda, SES), Microsoft Azure (AZ-900 Certified), Docker, CI/CD, GitHub Actions, Cloudflare Workers, Serverless (Edge Functions, pg\_cron), Render \\
+\noindent\textbf{Backend \& Infrastructure:} Python, FastAPI, Node.js, PostgreSQL, MongoDB, Redis, Celery, Infrastructure as Code (IaC) \\
+\noindent\textbf{System Design \& Networking:} Multi-tenant Architectures, Distributed Systems, Webhooks, RESTful APIs, CORS Proxies \\
+\noindent\textbf{Testing \& Security:} Git, GitHub, Unit/Integration Testing (Pytest), Vault Secrets Management, Uptime Monitoring
+
+% Work Experience
+\resumesection{WORK EXPERIENCE}
+
+\noindent\textbf{Software Developer} --- ShrFlow (Confidential Project) \hfill \textbf{Jan 2026 -- Present} \\
+\textit{Collaborated with external team \ | \ Remote}
+\begin{itemize}[leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt]
+    \item Built and deployed a scalable multi-tenant SaaS platform with robust asynchronous data pipelines and background processing
+    \item Implemented distributed task execution using Celery and Redis to ensure reliable, duplicate-free processing across worker nodes
+    \item Optimized large-scale data processing workflows and efficient database querying for high-throughput environments
+    \item Performed continuous debugging, testing, and infrastructural improvements to enhance system stability and reliability
+\end{itemize}
+
+\vspace{1pt}
+
+\noindent\textbf{Freelance Cloud Developer} --- Rajeshwari Tailoring \hfill \textbf{Jan 2026} \\
+\textit{Mobile-first Web App \ | \ Remote \ | \ \href{https://tailoring-red.vercel.app}{LIVE}}
+\begin{itemize}[leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt]
+    \item Automated deployment pipelines for a mobile-first web platform, driving a 30\% increase in business order volume
+    \item Integrated a dynamic image gallery with cloud-based media handling, successfully reducing page load times by 50\%
+    \item Managed hosting and DNS configurations to ensure secure, highly available, and seamless access for end users
+\end{itemize}
+
+\vspace{1pt}
+
+\noindent\textbf{AI/ML Project Developer} --- ByteXL (Industry-Guided Program) \hfill \textbf{Aug 2025 -- Oct 2025} \\
+\textit{Chatnalyxer -- AI-Powered Communication Assistant \ | \ Remote \ | \ \href{http://chatnalyxer.app/}{LIVE}}
+\begin{itemize}[leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt]
+    \item Deployed backend services and database instances on Render via automated GitHub Actions CI/CD pipelines
+    \item Achieved and maintained 99.9\% system uptime through robust error handling, monitoring, and automated deployments
+    \item Constructed a highly available FastAPI backend to process high volumes of real-time WhatsApp messages and push notifications
+\end{itemize}
+
+% Projects
+\resumesection{PROJECTS}
+
+\noindent\textbf{Email\_To\_Telebot} --- Serverless DevOps Architecture \hfill \textbf{June 2026 -- Present} \\
+\textit{Personal Open-Source Project \ | \ \href{https://rahul-pamula.github.io/Email_to_telebot/}{LIVE} \ | \ \href{https://github.com/Rahul-pamula/Email_to_telebot}{GitHub}}
+\begin{itemize}[leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt]
+    \item Architected a zero-idle-cost Serverless backend using Supabase Edge Functions triggered by Telegram Webhooks.
+    \item Developed an Infrastructure as Code (IaC) Web Deployer using React to automatically provision databases, execute SQL migrations, and configure Role-Based Access Control (RBAC) via the Supabase Management API.
+    \item Built and deployed a Cloudflare Worker as an edge CORS proxy to securely route requests between the frontend and API.
+    \item Established a robust CI/CD pipeline using GitHub Actions to automatically build (Vite) and deploy updates to GitHub Pages.
+    \item Secured API credentials using Supabase Vault encryption and automated database lifecycle cleanup with pg\_cron.
+\end{itemize}
+
+\vspace{1pt}
+
+\noindent\textbf{AgriFlow} --- Full-stack Cloud Deployed Platform \hfill \textbf{2026} \\
+\textit{Cloud Platform \ | \ \href{https://agriflow-frontend.onrender.com/}{LIVE}}
+\begin{itemize}[leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt]
+    \item Architected and deployed a scalable full-stack platform managing real-time weather data and AI model integrations.
+    \item Configured automated build and deployment processes to serve the interactive dashboard seamlessly across devices.
+    \item Managed cloud infrastructure to ensure consistent performance for semantic search and vector embedding queries.
+\end{itemize}
+
+% Education
+\resumesection{EDUCATION}
+
+\noindent\textbf{Bachelor of Technology in Computer Science and Engineering (AI \& ML)} \hfill \textbf{June 2023 -- Present} \\
+\textit{Parul University, Gujarat, India \ | \ Pre-final Year \ | \ CGPA: 8.12/10.0}
+
+\vspace{1pt}
+
+\noindent\textbf{Class XII} --- Telangana State Board \textit{(Score: 82.6\%)} \hfill \textbf{2023} \\
+\noindent\textbf{Class X} --- Telangana State Board \textit{(CGPA: 9.7/10.0)} \hfill \textbf{2021}
+
+% Certifications
+\resumesection{CERTIFICATIONS}
+
+\noindent\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} --- Microsoft \hfill \textbf{2025} \textit{(\href{https://www.credly.com/badges/cb01588f-556d-448d-84f3-aebeef100485/public_url}{Credly Badge})} \\
+\noindent\textbf{Introduction to SQL} --- DataFlair \hfill \textbf{2025} \textit{(\href{https://drive.google.com/file/d/1oosWCwBwj4BE8eseplqIj-2Cx2dp42X3/view?usp=sharing}{Certificate})} \\
+\noindent\textbf{AI/ML Sprint} --- ByteXL \hfill \textbf{2025} \textit{(\href{https://drive.google.com/file/d/1Didyx_p9tVhQ_uAG6CP7Sf4VfBXdAbES/view?usp=sharing}{Certificate})}
+
+\end{document}

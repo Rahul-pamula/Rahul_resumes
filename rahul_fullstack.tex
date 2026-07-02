@@ -1,0 +1,174 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{left=0.5in, right=0.5in, top=0.28in, bottom=0.28in}
+\usepackage{carlito}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Pamula Rahul - Resume},
+    pdfpagemode=FullScreen,
+}
+
+% Custom section command optimized for balanced spacing
+\newcommand{\resumesection}[1]{%
+  \vspace{5pt}%
+  \noindent{\large\textbf{#1}}\par
+  \vspace{1pt}%
+  \hrule height 0.8pt
+  \vspace{3pt}%
+}
+
+\begin{document}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Name and Contact Info (Optimized centering group to remove automatic vertical gaps)
+{\centering
+    {\Huge \textbf{PAMULA RAHUL}}\par
+    \vspace{2pt}
+    {\small +91 7330864041 \quad | \quad Telangana, India \quad | \quad Email: \href{mailto:pamularahul123@gmail.com}{pamularahul123@gmail.com}}\par
+    \vspace{1pt}
+    {\small LinkedIn: \href{http://www.linkedin.com/in/rahul-pamula}{linkedin.com/in/rahul-pamula} \quad | \quad GitHub: \href{https://github.com/Rahul-pamula}{github.com/Rahul-pamula} \quad | \quad LeetCode: \href{https://leetcode.com/u/rahulpamula}{leetcode.com/u/rahulpamula}}\par
+}
+
+\vspace{2pt}
+\hrule height 1.0pt
+\vspace{3pt}
+
+% Professional Summary
+\resumesection{PROFESSIONAL SUMMARY}
+\noindent Software Architect and Full-Stack Engineer specializing in designing highly scalable, distributed backend systems and multi-tenant architectures. Proven expertise in building robust microservices, real-time asynchronous pipelines, and high-performance RESTful APIs using Python, FastAPI, and React. Passionate about translating complex business requirements into resilient system designs, optimizing database schemas for large-scale data processing, and deploying secure, fault-tolerant infrastructure on AWS.
+
+
+% Technical Skills & Core Competencies
+\resumesection{TECHNICAL SKILLS \& CORE COMPETENCIES}
+\noindent\textbf{Architecture \& System Design:} Microservices, Distributed Systems, Multi-Tenant Architectures, Scalability, Message Queuing (RabbitMQ, Redis, Celery), Real-time Data Streaming (WebSockets) \par
+\noindent\textbf{Backend \& Full-Stack:} Python (FastAPI, Django), JavaScript (React, Node.js), Java, RESTful API Design, Asynchronous Programming, Serverless Computing, Secure System Design \par
+\noindent\textbf{Databases \& Cloud DevOps:} PostgreSQL, MySQL, MongoDB, Database Optimization, Schema Design, SQLAlchemy ORM, Row-Level Security (RLS), AWS (EC2, S3, SES, Lambda), Docker, Git, CI/CD
+
+% Work Experience
+\resumesection{WORK EXPERIENCE}
+
+\noindent\textbf{Freelance Full Stack Developer} --- Tailoring Business Platform \hfill \textbf{Dec 2025} \par
+\noindent\textit{Mobile-first Web App \ | \ Remote \ | \ \href{https://tailoring-red.vercel.app}{LIVE}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Built a mobile-first web platform for a local tailoring business, driving a 30\% increase in order volume.
+    \item Designed a responsive user interface optimized for non-technical users, improving mobile usability scores by 25\%.
+    \item Created an admin dashboard enabling real-time management of custom apparel designs and pricing matrices.
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent\textbf{AI/ML Project Developer (Industry-Guided Student Program)} --- ByteXL \hfill \textbf{Aug 2025 -- Oct 2025} \par
+\noindent\textit{Chatnalyxer -- AI-Powered Communication Assistant \ | \ Remote \ | \ \href{https://github.com/Rahul-pamula/chatnalyxer.git}{GitHub} \ | \ \href{https://rahul-pamula.github.io/chatnalyxer/}{LIVE}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Constructed a production-ready FastAPI backend that handles real-time WhatsApp message processing and push notifications.
+    \item Implemented NLP-based task and deadline extraction using Azure AI Services, achieving 96\% accuracy across test datasets.
+    \item Modeled a structured PostgreSQL schema using SQLAlchemy ORM to process and store multimodal inputs efficiently.
+\end{itemize}
+
+% Selected Projects
+\resumesection{TECHNICAL PROJECTS \hfill \normalfont\small\textit{(Authorized for showcase \& technical review)}}
+
+\noindent\textbf{Distributed Multi-Tenant Email \& Infrastructure SaaS Architecture (ShrFlow)} \quad | \quad \href{https://rahul-pamula.github.io/ShrFlow-V1/\#/}{\small\textit{Docs}} \hfill \textbf{Jan 2026 -- Present} \par
+\noindent\textit{Designed and engineered a production-ready, multi-tenant email automation and domain provisioning ecosystem, focusing on \mbox{high-volume} async data ingestion and horizontal worker scalability.}
+
+\vspace{3pt}
+
+\noindent\textbf{Sub-System 1: Workspace Orchestration Hub \& RBAC Gateway} \hfill \href{https://github.com/Rahul-pamula/ShrFlow-V1/blob/main/docs/projects/1_multi_tenant_saas.md}{\small\textit{System Architecture}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Built a multi-tenant workspace switcher secured by PostgreSQL Row-Level Security (RLS) and Supabase Auth.
+    \item Engineered an admin approval queue for workspace resources linked to Stripe billing simulations.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Sub-System 2: High-Volume CSV Ingestion Pipeline (Contacts Engine)} \hfill \href{https://github.com/Rahul-pamula/ShrFlow-V1/blob/main/docs/projects/2_csv_ingestion.md}{\small\textit{System Architecture}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Engineered an async CSV parsing pipeline streaming 100k+ rows in 500-row batches using Pandas and RabbitMQ to prevent memory bloat.
+    \item Deployed a WebSocket progress tracker using Redis Pub/Sub to broadcast live import statuses to the UI.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Sub-System 3: No-Code Email Builder \& MJML Compilation Microservice} \hfill \href{https://github.com/Rahul-pamula/ShrFlow-V1/blob/main/docs/projects/3_email_builder.md}{\small\textit{System Architecture}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Developed a visual template builder compiling DesignJSON states into responsive HTML via an MJML parser microservice.
+    \item Integrated automated preflight checks for CAN-SPAM compliance and Gmail's 102KB clipping threshold.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Sub-System 4: Asynchronous Campaign Dispatcher \& Multi-Node Worker Cluster} \hfill \href{https://github.com/Rahul-pamula/ShrFlow-V1/blob/main/docs/projects/4_campaign_dispatcher.md}{\small\textit{System Architecture}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Built an async scheduler using Redis distributed locks to coordinate bulk sends across a Celery worker cluster and prevent double dispatches.
+    \item Streamed large-scale campaign targets in O(1) memory space using PostgreSQL server-side cursors.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Sub-System 5: DKIM/SPF Domain Provisioning \& SES Mail Infrastructure} \hfill \href{https://github.com/Rahul-pamula/ShrFlow-V1/blob/main/docs/projects/5_domain_provisioning.md}{\small\textit{System Architecture}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Orchestrated AWS SES domain verification logic via Boto3 to programmatically generate DKIM and SPF verification DNS records.
+    \item Built a secure webhook receiver validating AWS SNS messages with RSA signature checks for event logging.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Sub-System 6: AI Developer Intelligence Server \& Context-Aware RAG Engine} \hfill \href{https://github.com/Rahul-pamula/ShrFlow-V1/blob/main/docs/projects/6_mcp_developer_intelligence.md}{\small\textit{System Architecture}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt]
+    \item Developed a Model Context Protocol (MCP) server using FastMCP SDK, exposing system schemas and worker logs to AI clients for debugging.
+    \item Implemented a semantic RAG pipeline indexing system documentation in a pgvector database for natural language queries.
+\end{itemize}
+
+\vspace{4pt}
+
+% Education & Certifications
+\resumesection{EDUCATION \& CERTIFICATIONS}
+\noindent
+\begin{minipage}[t]{0.50\textwidth}
+\textbf{Education}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+\textbf{Certifications}
+\end{minipage}
+
+\vspace{3pt}
+
+\noindent
+\begin{minipage}[t]{0.50\textwidth}
+\textbf{B.Tech in CSE (AI \& ML)} | Parul University \hfill \textbf{2023 -- 2027 (Exp.)} \par
+\vspace{1pt}
+{\small CGPA: 8.12/10.0 \ | \ Gujarat, India}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+\textbf{Azure Fundamentals (AZ-900)} | Microsoft \hfill \textbf{2025} \par
+\vspace{1pt}
+{\small Credential Badge: \href{https://www.credly.com/badges/cb01588f-556d-448d-84f3-aebeef100485/public_url}{Credly Badge}}
+\end{minipage}
+
+\vspace{5pt}
+
+\noindent
+\begin{minipage}[t]{0.50\textwidth}
+\textbf{Class XII \& X} | Telangana State Board \hfill \textbf{2023 \& 2021} \par
+\vspace{1pt}
+{\small Class XII: 82.6\% \ | \ Class X: 9.7/10.0 CGPA}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+\textbf{SQL (DataFlair) \& AI/ML (ByteXL)} \hfill \textbf{2025} \par
+\vspace{1pt}
+{\small Certificates: \href{https://drive.google.com/file/d/1oosWCwBwj4BE8eseplqIj-2Cx2dp42X3/view?usp=sharing}{SQL Link} \ | \ \href{https://drive.google.com/file/d/1Didyx_p9tVhQ_uAG6CP7Sf4VfBXdAbES/view?usp=sharing}{AI/ML Link}}
+\end{minipage}
+
+\end{document}

@@ -1,0 +1,123 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{left=0.55in, right=0.55in, top=0.25in, bottom=0.25in}
+\usepackage{lmodern}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\definecolor{primary}{RGB}{0, 73, 144}
+\definecolor{text}{RGB}{40, 40, 40}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=magenta,      
+    urlcolor=primary,
+    pdftitle={Pamula Rahul - Resume},
+    pdfpagemode=FullScreen,
+}
+
+% Custom section command optimized for balanced spacing
+\newcommand{\resumesection}[1]{%
+  \vspace{4pt}%
+  {\color{primary}\large\textbf{\MakeUppercase{#1}}}\par
+  \vspace{2pt}%
+  {\color{primary}\hrule height 1.2pt}
+  \vspace{3pt}%
+}
+
+\begin{document}
+\pagestyle{empty}
+\color{text}
+
+% Name and Contact Info
+{\centering
+    {\Huge \textbf{\color{primary} PAMULA RAHUL}}\par
+    \vspace{3pt}
+    {\small 
+    \faPhone \ +91 7330864041 \quad | \quad 
+    \faMapMarker \ Maripeda, Mahabubabad, Telangana, India \quad | \quad 
+    \faEnvelope \ \href{mailto:pamularahul123@gmail.com}{pamularahul123@gmail.com}}\par
+    \vspace{2pt}
+    {\small 
+    \faLinkedin \ \href{http://www.linkedin.com/in/rahul-pamula}{linkedin.com/in/rahul-pamula} \quad | \quad 
+    \faGithub \ \href{https://github.com/Rahul-pamula}{github.com/Rahul-pamula} \quad | \quad 
+    \faCode \ \href{https://leetcode.com/u/rahulpamula}{leetcode.com/u/rahulpamula}}\par
+}
+
+\vspace{4pt}
+
+% Professional Summary
+\resumesection{PROFESSIONAL SUMMARY}
+\noindent AI \& ML Engineer focused on building scalable, production-ready Generative AI applications and LLM-powered systems. Experienced in developing robust Retrieval-Augmented Generation (RAG) architectures, NLP pipelines, and multimodal data processing workflows. Proficient in leveraging frameworks like LangChain, PyTorch, and TensorFlow to integrate advanced models (Gemini 2.0, Llama 3) with robust Python/FastAPI backend infrastructure and vector databases for high-performance intelligent applications.
+
+% Technical Skills
+\resumesection{TECHNICAL SKILLS}
+\noindent\textbf{AI \& Machine Learning:} Deep Learning (PyTorch, TensorFlow), NLP, RAG, LangChain, Hugging Face, Vector Embeddings (Semantic Search), Multimodal AI, Scikit-learn, LLMs (Gemini 2.0, Llama 3) \\
+\noindent\textbf{Programming \& Backend:} Python, SQL, FastAPI, PostgreSQL, Vector Databases (Pinecone), RESTful APIs, Asynchronous Pipelines \\
+\noindent\textbf{Cloud \& MLOps:} AWS, Render, Docker, CI/CD, GitHub Actions, Serverless Architecture, Model Deployment, Data Preprocessing
+
+% Work Experience
+\resumesection{WORK EXPERIENCE}
+
+\noindent\textbf{AI/ML Project Developer} --- ByteXL (Industry-Guided Program) \hfill \textbf{Aug 2025 -- Oct 2025} \\
+\textit{Chatnalyxer -- AI-Powered Communication Assistant \ | \ Remote \ | \ \href{http://chatnalyxer.app/}{LIVE} \ | \ \href{https://github.com/Rahul-pamula/chatnalyxer.git}{GitHub}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Constructed a production-ready FastAPI backend handling real-time asynchronous message processing and NLP integration
+    \item Implemented NLP-based entity recognition and deadline extraction using Azure AI Services, achieving 96\% accuracy on test datasets
+    \item Modelled a structured PostgreSQL schema using SQLAlchemy ORM to preprocess, validate, and store multimodal inputs efficiently
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Software Developer} --- ShrFlow (Confidential Project) \hfill \textbf{Jan 2026 -- Present} \\
+\textit{Collaborated with external team \ | \ Remote}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Built a scalable multi-tenant platform with robust asynchronous data pipelines for processing distributed AI tasks and workflows
+    \item Developed high-performance backend APIs using FastAPI and PostgreSQL to support complex data transformations and ETL processes
+    \item Implemented distributed task execution using Celery and Redis to ensure reliable, high-throughput model inference pipelines
+\end{itemize}
+
+% Projects
+\resumesection{PROJECTS}
+
+\noindent\textbf{AgriFlow} --- AI-Powered Agricultural Platform \hfill \textbf{2026} \\
+\textit{Full-stack AI Platform \ | \ \href{https://agriflow-frontend.onrender.com/}{LIVE}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Engineered an intelligent farming assistant leveraging a custom Retrieval-Augmented Generation (RAG) pipeline and Google Gemini 2.0.
+    \item Implemented semantic search and vector embeddings to deliver highly personalized, context-aware advice with low latency.
+    \item Integrated real-time weather data and comprehensive unstructured knowledge bases to dynamically optimize recommendations.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Email\_To\_Telebot} --- AI-Powered Personal Email Assistant \hfill \textbf{June 2026 -- Present} \\
+\textit{Personal Open-Source Project \ | \ \href{https://rahul-pamula.github.io/Email_to_telebot/}{LIVE} \ | \ \href{https://github.com/Rahul-pamula/Email_to_telebot}{GitHub}}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Integrated Groq's Llama 3 8B model to classify, analyze, and summarize incoming emails through zero-shot prompting techniques.
+    \item Developed a scalable serverless Telegram bot that monitors inboxes and pushes AI-summarized insights in real-time.
+    \item Utilized Supabase Edge Functions and pg\_cron to build a fully automated, low-latency execution and notification delivery system.
+\end{itemize}
+
+% Education
+\resumesection{EDUCATION}
+
+\noindent\textbf{Bachelor of Technology in Computer Science and Engineering (AI \& ML)} \hfill \textbf{June 2023 -- Present} \\
+\textit{Parul University, Gujarat, India \ | \ Pre-final Year \ | \ CGPA: 8.12/10.0}
+
+\vspace{3pt}
+
+\noindent\textbf{Class XII (82.6\%) \& Class X (9.7 CGPA)} --- Telangana State Board \hfill \textbf{2021 -- 2023}
+
+% Certifications
+\resumesection{CERTIFICATIONS}
+
+\noindent\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} --- Microsoft \hfill \textbf{2025} \textit{(\href{https://www.credly.com/badges/cb01588f-556d-448d-84f3-aebeef100485/public_url}{Credly Badge})} \\
+\noindent\textbf{Introduction to SQL} --- DataFlair \hfill \textbf{2025} \textit{(\href{https://drive.google.com/file/d/1oosWCwBwj4BE8eseplqIj-2Cx2dp42X3/view?usp=sharing}{Certificate})} \\
+\noindent\textbf{AI/ML Sprint} --- ByteXL \hfill \textbf{2025} \textit{(\href{https://drive.google.com/file/d/1Didyx_p9tVhQ_uAG6CP7Sf4VfBXdAbES/view?usp=sharing}{Certificate})}
+
+\end{document}

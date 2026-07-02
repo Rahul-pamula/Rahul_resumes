@@ -1,0 +1,137 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{left=0.55in, right=0.55in, top=0.25in, bottom=0.25in}
+\usepackage{lmodern}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\definecolor{primary}{RGB}{0, 73, 144}
+\definecolor{text}{RGB}{40, 40, 40}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=magenta,      
+    urlcolor=primary,
+    pdftitle={Pamula Rahul - Resume},
+    pdfpagemode=FullScreen,
+}
+
+% Custom section command optimized for balanced spacing
+\newcommand{\resumesection}[1]{%
+  \vspace{4pt}%
+  {\color{primary}\large\textbf{\MakeUppercase{#1}}}\par
+  \vspace{2pt}%
+  {\color{primary}\hrule height 1.2pt}
+  \vspace{3pt}%
+}
+
+\begin{document}
+\pagestyle{empty}
+\color{text}
+
+% Name and Contact Info
+{\centering
+    {\Huge \textbf{\color{primary} PAMULA RAHUL}}\par
+    \vspace{3pt}
+    {\small 
+    \faPhone \ +91 7330864041 \quad | \quad 
+    \faMapMarker \ Maripeda, Mahabubabad, Telangana, India \quad | \quad 
+    \faEnvelope \ \href{mailto:pamularahul123@gmail.com}{pamularahul123@gmail.com}}\par
+    \vspace{2pt}
+    {\small 
+    \faLinkedin \ \href{http://www.linkedin.com/in/rahul-pamula}{linkedin.com/in/rahul-pamula} \quad | \quad 
+    \faGithub \ \href{https://github.com/Rahul-pamula}{github.com/Rahul-pamula} \quad | \quad 
+    \faCode \ \href{https://leetcode.com/u/rahulpamula}{leetcode.com/u/rahulpamula}}\par
+}
+
+\vspace{4pt}
+
+% Professional Summary
+\resumesection{PROFESSIONAL SUMMARY}
+\noindent Versatile Software Engineer with robust expertise spanning Full-Stack Development, Cloud \& DevOps, AI/ML, and Quality Assurance. Proven ability to architect scalable web applications (MERN/FastAPI), deploy robust CI/CD cloud infrastructures, and integrate generative AI models. Adept at ensuring rigorous software quality and seamless user experiences across the entire software development lifecycle.
+
+% Technical Skills
+\resumesection{TECHNICAL SKILLS}
+\noindent\textbf{Programming \& Full-Stack:} Python, JavaScript, React.js, React Native, Node.js, Express.js, FastAPI, RESTful APIs \\
+\noindent\textbf{Cloud, DevOps \& QA:} AWS, Docker, CI/CD, Serverless, Automation Testing, Postman, System Monitoring \\
+\noindent\textbf{AI/ML \& Databases:} Generative AI (LLMs, RAG), LangChain, Vector Search, PostgreSQL, MongoDB, SQL
+
+% Work Experience
+\resumesection{WORK EXPERIENCE}
+
+\noindent\textbf{Software Developer} --- ShrFlow \textit{(Collaborated remotely)} \hfill \textbf{Jan 2026 -- Present}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Engineered a highly scalable, multi-tenant SaaS architecture utilizing advanced asynchronous data pipelines.
+    \item Led full-stack feature development while implementing distributed task execution and comprehensive API testing.
+    \item Optimized large-scale data processing workflows and database querying for high-throughput environments.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{AI/ML Project Developer} --- ByteXL \textit{(Industry-Guided Program)} \hfill \textbf{Aug 2025 -- Oct 2025}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Constructed a production-ready FastAPI backend handling real-time asynchronous WhatsApp message processing.
+    \item Implemented NLP-based entity recognition using Azure AI Services, achieving 96\% accuracy on test datasets.
+    \item Deployed scalable services on cloud infrastructure, ensuring high availability and robust data processing.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Freelance Full Stack Developer} --- Tailoring Platform \textit{|\ \href{https://tailoring-red.vercel.app}{LIVE}} \hfill \textbf{Jan 2026}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Launched a responsive, mobile-first web platform utilizing React, driving a 30\% increase in business order volume.
+    \item Created a dynamic admin dashboard enabling real-time management of custom apparel designs and pricing matrices.
+    \item Conducted extensive manual and automated UI testing to guarantee a seamless cross-device user experience.
+\end{itemize}
+
+% Projects
+\resumesection{KEY PROJECTS}
+
+\noindent\textbf{Email\_To\_Telebot} --- Serverless Cloud Architecture \textit{|\ \href{https://rahul-pamula.github.io/Email_to_telebot/}{LIVE} \ | \ \href{https://github.com/Rahul-pamula/Email_to_telebot}{GitHub}} \hfill \textbf{June 2026 -- Present}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Architected a zero-idle-cost Serverless backend using Supabase Edge Functions and Telegram Webhooks.
+    \item Integrated Groq's Llama 3 model for real-time email analysis, summarizing inbox content with low latency.
+    \item Secured APIs with Vault encryption and automated database lifecycle management using pg\_cron.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{AgriFlow} --- Full-Stack AI Platform \textit{|\ \href{https://agriflow-frontend.onrender.com/}{LIVE}} \hfill \textbf{2026}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Developed a robust MERN stack application featuring an AI Chat Assistant powered by Google Gemini 2.0.
+    \item Designed an interactive dashboard presenting real-time agricultural data and context-aware farming insights.
+    \item Integrated real-time weather APIs and a comprehensive unstructured knowledge base to optimize recommendations.
+\end{itemize}
+
+\vspace{3pt}
+
+\noindent\textbf{Chatnalyxer} --- AI Productivity App \textit{|\ \href{http://chatnalyxer.app/}{LIVE} \ | \ \href{https://github.com/Rahul-pamula/chatnalyxer.git}{GitHub}} \hfill \textbf{Aug 2025 -- Oct 2025}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Built a cross-platform mobile frontend (React Native) syncing seamlessly with a Node.js/Express.js backend.
+    \item Utilized Azure AI for NLP-based deadline extraction, ensuring 96\% accuracy and strict PostgreSQL data integrity.
+    \item Implemented JWT-based authentication and a privacy-first data pipeline, ensuring message content is never stored.
+\end{itemize}
+
+% Education
+\resumesection{EDUCATION}
+
+\noindent\textbf{Bachelor of Technology in Computer Science and Engineering (AI \& ML)} \hfill \textbf{June 2023 -- Present} \\
+\textit{Parul University, Gujarat, India \ | \ Pre-final Year \ | \ CGPA: 8.12/10.0}
+
+\vspace{3pt}
+
+\noindent\textbf{Class XII (82.6\%) \& Class X (9.7/10.0 CGPA)} --- Telangana State Board \hfill \textbf{2021 -- 2023}
+
+% Certifications
+\resumesection{CERTIFICATIONS}
+
+\noindent\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} --- Microsoft \hfill \textbf{2025} \textit{(\href{https://www.credly.com/badges/cb01588f-556d-448d-84f3-aebeef100485/public_url}{Credly Badge})} \\
+\noindent\textbf{Introduction to SQL} --- DataFlair \hfill \textbf{2025} \textit{(\href{https://drive.google.com/file/d/1oosWCwBwj4BE8eseplqIj-2Cx2dp42X3/view?usp=sharing}{Certificate})} \\
+\noindent\textbf{AI/ML Sprint} --- ByteXL \hfill \textbf{2025} \textit{(\href{https://drive.google.com/file/d/1Didyx_p9tVhQ_uAG6CP7Sf4VfBXdAbES/view?usp=sharing}{Certificate})}
+
+\end{document}
