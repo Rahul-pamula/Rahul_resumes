@@ -1,56 +1,46 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage{geometry}
-\geometry{left=0.5in, right=0.5in, top=0.2in, bottom=0.2in}
-\usepackage{lmodern}
-\usepackage{fontawesome5}
-\usepackage{xcolor}
+\geometry{left=0.5in, right=0.5in, top=0.28in, bottom=0.28in}
+\usepackage{carlito}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{hyperref}
 \usepackage{enumitem}
 
-\definecolor{primary}{RGB}{0, 73, 144}
-\definecolor{text}{RGB}{40, 40, 40}
-
 \hypersetup{
     colorlinks=true,
-    linkcolor=primary,
+    linkcolor=blue,
     filecolor=magenta,      
-    urlcolor=primary,
+    urlcolor=blue,
     pdftitle={Pamula Rahul - Resume},
     pdfpagemode=FullScreen,
 }
 
 % Custom section command optimized for balanced spacing
 \newcommand{\resumesection}[1]{%
+  \vspace{5pt}%
+  \noindent{\large\textbf{#1}}\par
   \vspace{1pt}%
-  {\color{primary}\large\textbf{\MakeUppercase{#1}}}\par
-  \vspace{1pt}%
-  {\color{primary}\hrule height 1.2pt}
-  \vspace{2pt}%
+  \hrule height 0.8pt
+  \vspace{3pt}%
 }
 
 \begin{document}
 \pagestyle{empty}
-\color{text}
+\setlength{\parindent}{0pt}
 
 % Name and Contact Info
 {\centering
-    {\Huge \textbf{\color{primary} PAMULA RAHUL}}\par
+    {\Huge \textbf{PAMULA RAHUL}}\par
+    \vspace{2pt}
+    {\small +91 7330864041 \quad ---\quad Maripeda, Mahabubabad, Telangana, India \quad ---\quad Email: \href{mailto:pamularahul123@gmail.com}{pamularahul123@gmail.com}}\par
     \vspace{1pt}
-    {\small 
-    \faPhone \ +91 7330864041 \quad | \quad 
-    \faMapMarker \ Maripeda, Mahabubabad, Telangana, India \quad | \quad 
-    \faEnvelope \ \href{mailto:pamularahul123@gmail.com}{pamularahul123@gmail.com}}\par
-    \vspace{1pt}
-    {\small 
-    \faLinkedin \ \href{http://www.linkedin.com/in/rahul-pamula}{linkedin.com/in/rahul-pamula} \quad | \quad 
-    \faGithub \ \href{https://github.com/Rahul-pamula}{github.com/Rahul-pamula} \quad | \quad 
-    \faCode \ \href{https://leetcode.com/u/rahulpamula}{leetcode.com/u/rahulpamula} \quad | \quad 
-    \faLink \ \href{https://bytexl.app/pamularahul}{bytexl.app/pamularahul}}\par
+    {\small LinkedIn: \href{http://www.linkedin.com/in/rahul-pamula}{linkedin.com/in/rahul-pamula} \quad ---\quad GitHub: \href{https://github.com/Rahul-pamula}{github.com/Rahul-pamula} \quad ---\quad LeetCode: \href{https://leetcode.com/u/rahulpamula}{leetcode.com/u/rahulpamula} \quad ---\quad byteXL: \href{https://bytexl.app/pamularahul}{bytexl.app/pamularahul}}\par
 }
 
-\vspace{1pt}
+\vspace{2pt}
+\hrule height 1.0pt
+\vspace{3pt}
 
 % Professional Summary
 \resumesection{PROFESSIONAL SUMMARY}
