@@ -1,0 +1,142 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{left=0.5in, right=0.5in, top=0.20in, bottom=0.20in}
+\usepackage{carlito}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Pamula Rahul - Resume},
+    pdfpagemode=FullScreen,
+}
+
+% Custom section command optimized for balanced spacing
+\newcommand{\resumesection}[1]{%
+  \vspace{5pt}%
+  \noindent{\large\textbf{#1}}\par
+  \vspace{2pt}%
+  \hrule height 0.8pt
+  \vspace{4pt}%
+}
+
+\begin{document}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Name and Contact Info
+{\centering
+    {\Huge \textbf{PAMULA RAHUL}}\par
+    \vspace{3pt}
+    {\small +91 7330864041 \quad ---\quad Maripeda, Mahabubabad, Telangana, India \quad ---\quad Email: \href{mailto:pamularahul123@gmail.com}{pamularahul123@gmail.com}}\par
+    \vspace{2pt}
+    {\small LinkedIn: \href{http://www.linkedin.com/in/rahul-pamula}{linkedin.com/in/rahul-pamula} \quad ---\quad GitHub: \href{https://github.com/Rahul-pamula}{github.com/Rahul-pamula} \quad ---\quad LeetCode: \href{https://leetcode.com/u/rahulpamula}{leetcode.com/u/rahulpamula}}\par
+}
+
+\vspace{3pt}
+\hrule height 1.0pt
+\vspace{4pt}
+
+% MODIFICATION: Refined grammar and explicitly included "Cloud Computing". Removed repeated adjectives to ensure ATS compliance without fluff.
+% Professional Summary
+\resumesection{PROFESSIONAL SUMMARY}
+\noindent Full Stack Software Developer with hands-on experience building web applications using React.js, FastAPI, Node.js, PostgreSQL, and Cloud Computing platforms including AWS and Microsoft Azure. Experienced in designing RESTful APIs, implementing CI/CD pipelines, containerizing applications with Docker, and deploying production-ready solutions using Agile methodologies.
+
+% MODIFICATION: Removed "KEY ACHIEVEMENTS" section entirely as requested to free up space.
+
+% MODIFICATION: Reordered and strictly formatted Technical Skills to exactly match the provided list. Kept Java.
+% Technical Skills
+\resumesection{TECHNICAL SKILLS}
+\noindent\textbf{Programming Languages:} Java, Python, JavaScript, SQL \\
+\noindent\textbf{Frontend:} React.js, Next.js, HTML5, CSS3, Tailwind CSS, Responsive Design \\
+\noindent\textbf{Backend:} FastAPI, Node.js, Express.js, RESTful APIs, Authentication \& Authorization, JWT, Microservices, Asynchronous Programming \\
+\noindent\textbf{Databases:} PostgreSQL, MongoDB, Redis, Database Design, Database Optimization \\
+\noindent\textbf{Cloud \& DevOps:} AWS (EC2, S3, Lambda), Microsoft Azure (AZ-900), Docker, GitHub Actions, CI/CD, Containerization, Cloud Deployment \\
+\noindent\textbf{Software Engineering:} Data Structures \& Algorithms, Object-Oriented Programming (OOP), Design Patterns, SOLID Principles, SDLC, Agile, Scrum \\
+\noindent\textbf{Tools:} Git, GitHub, Postman, VS Code, Linux \\
+\noindent\textbf{AI/ML:} Generative AI, NLP
+
+% MODIFICATION: Strengthened action verbs (Designed, Engineered, Optimized, Managed) and avoided repeating "Developed". Integrated required keywords (Agile Sprints, PostgreSQL, API Development, Performance Optimization, Code Reviews, Maintainability).
+% Work Experience
+\resumesection{WORK EXPERIENCE}
+
+\noindent\textbf{Software Developer} --- ShrFlow \textit{(Collaborated remotely)} \hfill \textbf{Jan 2026 -- Present}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Designed a multi-tenant SaaS application leveraging FastAPI and PostgreSQL, implementing asynchronous background processing to improve efficiency.
+    \item Engineered full-stack features using React.js, ensuring long-term maintainability through comprehensive code reviews.
+    \item Optimized database queries and executed performance optimization strategies, reducing API response time by 35\% and improving application throughput by 40\%.
+    \item Managed API development and collaborated in Agile Sprints, actively participating in sprint planning and debugging across the SDLC.
+    \item \textbf{Technologies:} React.js \textbullet{} FastAPI \textbullet{} PostgreSQL \textbullet{} Docker \textbullet{} CI/CD \textbullet{} Git \textbullet{} GitHub
+\end{itemize}
+
+\vspace{4pt}
+
+% MODIFICATION: Replaced 'Cloud Deployment' with 'Vercel' since the link uses vercel.app. Changed starting verb to 'Built' and 'Executed'.
+\noindent\textbf{Freelance Full Stack Developer} --- Tailoring Platform \textit{|\ \href{https://github.com/Rahul-pamula}{GitHub} \ | \ \href{https://tailoring-red.vercel.app}{Live Demo}} \hfill \textbf{Jan 2026}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Built and deployed a responsive React.js web application with an admin dashboard for order and pricing management, driving a 30\% increase in business order volume.
+    \item Executed extensive manual and automated UI testing to guarantee a consistent cross-device user experience.
+    \item \textbf{Technologies:} React.js \textbullet{} HTML5 \textbullet{} CSS3 \textbullet{} Vercel \textbullet{} Responsive Design
+\end{itemize}
+
+% Projects
+\resumesection{KEY PROJECTS}
+
+% MODIFICATION: Used varied verbs (Architected, Created, Implemented, Configured). Ensured requested technologies are present in the list (Supabase, FastAPI, React.js, GitHub Actions, REST APIs, Authentication, CI/CD).
+\noindent\textbf{Email\_To\_Telebot} --- Serverless Cloud Architecture \textit{|\ \href{https://github.com/Rahul-pamula/Email_to_telebot}{GitHub} \ | \ \href{https://rahul-pamula.github.io/Email_to_telebot/}{Live Demo}} \hfill \textbf{June 2026 -- Present}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Architected a serverless backend using Supabase Edge Functions and Telegram Webhooks.
+    \item Created RESTful APIs for automated email processing and inbox summarization.
+    \item Implemented RBAC and secure API management using Supabase Authentication and Vault.
+    \item Configured automated deployment pipelines using GitHub Actions for continuous integration.
+    \item \textbf{Technologies:} React.js \textbullet{} FastAPI \textbullet{} Supabase \textbullet{} REST APIs \textbullet{} Authentication \textbullet{} GitHub Actions \textbullet{} CI/CD
+\end{itemize}
+
+\vspace{4pt}
+
+% MODIFICATION: Used varied verbs (Developed, Programmed, Engineered, Designed). Integrated "Weather API Integration", "MongoDB", "Responsive Dashboard", and "RESTful APIs" directly into the bullet points.
+\noindent\textbf{AgriFlow} --- Full-Stack AI Platform \textit{|\ \href{https://github.com/Rahul-pamula/AgriFlow}{GitHub} \ | \ \href{https://agriflow-frontend.onrender.com/}{Live Demo}} \hfill \textbf{2026}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Developed a full-stack MERN application providing real-time data insights and agricultural recommendations.
+    \item Programmed RESTful APIs and facilitated seamless Weather API integration for accurate forecasting.
+    \item Engineered advanced search functionality for unstructured data using MongoDB.
+    \item Designed a responsive dashboard to visualize real-time agricultural insights effectively.
+    \item \textbf{Technologies:} React.js \textbullet{} Node.js \textbullet{} Express.js \textbullet{} MongoDB \textbullet{} RESTful APIs \textbullet{} JSON
+\end{itemize}
+
+\vspace{4pt}
+
+% MODIFICATION: Used exact requested string "Integrated Azure AI services for NLP-based deadline extraction.". Varied starting verbs (Constructed, Developed, Integrated, Established).
+\noindent\textbf{Chatnalyxer} --- AI Productivity App \textit{|\ \href{https://github.com/Rahul-pamula/chatnalyxer.git}{GitHub} \ | \ \href{http://chatnalyxer.app/}{Live Demo}} \hfill \textbf{Aug 2025 -- Oct 2025}
+\begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item Constructed a cross-platform application integrated with a robust Node.js and PostgreSQL backend.
+    \item Developed secure REST APIs utilizing JWT for robust Authentication \& Authorization.
+    \item Integrated Azure AI services for NLP-based deadline extraction and automated data entry.
+    \item Established CI/CD pipelines using GitHub Actions to streamline Cloud Deployment.
+    \item \textbf{Technologies:} React Native \textbullet{} Node.js \textbullet{} PostgreSQL \textbullet{} Docker \textbullet{} JWT \textbullet{} GitHub Actions \textbullet{} CI/CD
+\end{itemize}
+
+% Education
+\resumesection{EDUCATION}
+
+\noindent\textbf{Bachelor of Technology in Computer Science and Engineering (AI \& ML)} \hfill \textbf{June 2023 -- Present} \\
+% MODIFICATION: Replaced "Pre-final Year" with "Expected Graduation: 2027" while keeping CGPA.
+\textit{Parul University, Gujarat, India \ | \ Expected Graduation: 2027 \ | \ CGPA: 8.12/10.0}
+
+\vspace{4pt}
+
+\noindent\textbf{Class XII (82.6\%) \& Class X (9.7/10.0 CGPA)} --- Telangana State Board \hfill \textbf{2021 -- 2023}
+
+% Certifications
+\resumesection{CERTIFICATIONS}
+
+\noindent\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} --- Microsoft \hfill \textbf{2025} \textit{(\href{https://www.credly.com/badges/cb01588f-556d-448d-84f3-aebeef100485/public_url}{Credly Badge})} \\
+\noindent\textbf{Introduction to SQL} --- DataFlair \hfill \textbf{2025} \textit{(\href{https://drive.google.com/file/d/1oosWCwBwj4BE8eseplqIj-2Cx2dp42X3/view?usp=sharing}{Certificate})} \\
+\noindent\textbf{AI/ML Sprint} --- ByteXL \hfill \textbf{2025} \textit{(\href{https://drive.google.com/file/d/1Didyx_p9tVhQ_uAG6CP7Sf4VfBXdAbES/view?usp=sharing}{Certificate})}
+
+\end{document}
